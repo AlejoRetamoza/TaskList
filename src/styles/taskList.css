@@ -1,0 +1,33 @@
+.task-list {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: rgb(255, 255, 255);
+  margin: auto;
+  margin-top: 1em;
+  border-radius: 10px;
+  border: 0.5px solid rgb(79, 37, 117);
+}
+
+.task-list-single {
+  width: 80%;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  margin: auto;
+  margin-top: 1em;
+  border-radius: 10px;
+  border: 0.5px solid rgb(79, 37, 117);
+  color: rgb(79, 37, 117);
+  animation: appear 200ms ease-in-out;
+}
+
+@keyframes appear {
+  from {
+    scale: 0.7;
+    opacity: 0;
+  }
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
